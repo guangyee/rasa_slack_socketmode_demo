@@ -43,9 +43,9 @@ To use the Slack socket mode connector:
    dependent packages are installed on a volume that is accessible by the
    container. For example:
 
-```
-pip install --target=/path/to/my/rasabot/volume/slack_bolt slack_bolt
-```
+   ```
+   pip install --target=/path/to/my/rasabot/volume/slack_bolt slack_bolt
+   ```
 
 3. follow the [Slack Creating An App][slack creating an app] instructions
    to create an app for your Rasa bot. Note down the bot token. It should
@@ -59,11 +59,11 @@ pip install --target=/path/to/my/rasabot/volume/slack_bolt slack_bolt
    with the `slack_bot_token` and `slack_app_token` obtained from above.
    For example, your `credentials.yml` content should looks like this.
 
-```
-custom_connectors.slack_socketmode.SlackSocketModeInput:
-  slack_bot_token: "xoxb-123456789012-123456789012-dF668EJ1i5twtTKt394cUmxz"
-  slack_app_token: "xapp-3-BC2A68K9T8T-123456789012-123d264c9f5c123456e3ec782ba8193868231123385da5bbb8c59d37ee123456k"
-```
+   ```
+   custom_connectors.slack_socketmode.SlackSocketModeInput:
+     slack_bot_token: "xoxb-123456789012-123456789012-dF668EJ1i5twtTKt394cUmxz"
+     slack_app_token: "xapp-3-BC2A68K9T8T-123456789012-123d264c9f5c123456e3ec782ba8193868231123385da5bbb8c59d37ee123456k"
+   ```
 
 Here's a sample Docker Compose file showing how to use the Slack socket mode
 connector.
