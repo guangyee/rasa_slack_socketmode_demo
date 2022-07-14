@@ -43,7 +43,7 @@ To use the Slack socket mode connector:
    dependent packages are installed on a volume that is accessible by the
    container. For example:
 
-```console
+```
 pip install --target=/path/to/my/rasabot/volume/slack_bolt slack_bolt
 ```
 
