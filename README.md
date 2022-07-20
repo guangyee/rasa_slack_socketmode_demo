@@ -27,6 +27,7 @@ This is demo code showing how Rasa Slack connector using socket mode can be
 done. Currently it only handles the Slack `app_mention` event for demo
 purposes. See https://api.slack.com/events for a complete list of Slack
 events.
+
 ---
 
 
